@@ -1,0 +1,59 @@
+{
+	"info": {
+		"_postman_id": "7407a3da-ebf4-4ee7-ac22-c000bd63d76e",
+		"name": "[Cadastro Usuarios]",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "28626452"
+	},
+	"item": [
+		{
+			"name": "listar Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8081/usuario/listar",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"usuario",
+						"listar"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "cadastrar Users",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n   \"nome\" :\"Talisson\",\r\n   \"cidade\":\"São Paulo\",\r\n   \"cargo\":\"Backend kotlin\" \r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/usuario/cadastro",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"usuario",
+						"cadastro"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
